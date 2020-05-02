@@ -5,11 +5,11 @@
 }
 
 body {
-  font-family: "HarmoniaSansProCyr-SemiBd";
+  font-family: "HarmoniaSansProCyr-SemiBd", helvetica;
 }
 
 nav {
-  width: 80%;
+  width: 70%;
   height: 100px;
   margin: 0 auto;
 }
@@ -22,15 +22,7 @@ nav {
   border: 2px solid black;
 }
 
-.ciao li {
-  list-style-type: none;
-}
-
-.ciao a {
-  text-decoration: none;
-}
-
-.destro {
+.ciao .destro {
   width: 50%;
   height: 100px;
   display: flex;
@@ -40,7 +32,7 @@ nav {
   border: 2px solid black;
 }
 
-.destro ul {
+.ciao .destro ul {
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -48,12 +40,22 @@ nav {
   border: 1px solid red;
 }
 
+.ciao .destro ul li {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.ciao .destro ul li a {
+  text-decoration: none;
+  color: #58402c;
+}
+
 .sectionuno {
-  width: 80%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
   display: flex;
-  background-color: #ffe7d2;
+  background-color: white;
   margin-top: 130px;
 }
 
@@ -66,19 +68,21 @@ nav {
   color: #58402c;
   font-size: 50px;
   margin-bottom: 10px;
+  line-height: 70px;
 }
 
 .sectionuno .container_sx h3 {
   color: #58402c;
   font-size: 22px;
+  line-height: 33px;
 }
 
-.container_dx {
+.sectionuno .container_dx {
   width: 50%;
   height: 100%;
 }
 
-.container_dx img {
+.sectionuno .container_dx img {
   width: 100%;
   height: 100%;
 }
@@ -86,7 +90,7 @@ nav {
 .containerdue {
   width: 100%;
   height: 100%;
-  background-color: #ffe7d2;
+  background: #ffe7d2;
   border: 2px solid green;
 }
 
@@ -119,7 +123,6 @@ nav {
   min-height: 220px;
   border: 1px solid black;
   margin: 0 3%;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +151,6 @@ nav {
 .terzocontainer {
   width: 100%;
   height: 500px;
-  background-color: yellow;
   border: 2px solid red;
   display: flex;
   margin-top: 150px;
@@ -209,13 +211,12 @@ nav {
 .quartocontainer {
   width: 100%;
   height: 100%;
-  background-color: green;
   border: 5px solid purple;
   display: flex;
   padding-top: 100px;
 }
 
-.quartosinistro {
+.quartocontainer .quartosinistro {
   width: 50%;
   height: 100%;
   border: 3px solid blue;
@@ -224,7 +225,7 @@ nav {
   align-items: flex-end;
 }
 
-.quartosinistro h1 {
+.quartocontainer .quartosinistro h1 {
   width: 50%;
   font-size: 26px;
   padding-bottom: 30px;
@@ -233,7 +234,7 @@ nav {
   line-height: 39px;
 }
 
-.quartosinistro h3 {
+.quartocontainer .quartosinistro h3 {
   max-width: 50%;
   font-size: 22px;
   font-style: italic;
@@ -242,28 +243,28 @@ nav {
   line-height: 33px;
 }
 
-.quartosinistro p {
+.quartocontainer .quartosinistro p {
   width: 50%;
   font-size: 22px;
   color: blue;
   margin-bottom: 55px;
 }
 
-.tigre {
+.quartocontainer .tigre {
   width: 50%;
 }
 
-.tigre img {
+.quartocontainer .tigre img {
   max-width: 270px;
   margin-right: 80px;
 }
 
-.quartodestro {
+.quartocontainer .quartodestro {
   width: 50%;
   height: 100%;
 }
 
-.quartodestro img {
+.quartocontainer .quartodestro img {
   width: 100%;
   height: 100%;
 }
@@ -271,32 +272,31 @@ nav {
 .quintocontainer {
   width: 100%;
   height: 500px;
-  background-color: yellow;
   border: 2px solid red;
   display: flex;
   margin-top: 150px;
 }
 
-.quintosinistro {
+.quintocontainer .quintosinistro {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: flex-end;
 }
 
-.quintosinistro img {
+.quintocontainer .quintosinistro img {
   width: 100%;
   height: 100%;
   padding-top: 30px;
 }
 
-.quintodestro {
+.quintocontainer .quintodestro {
   width: 50%;
   height: 100%;
   background-color: white;
 }
 
-.quintodestro h1 {
+.quintocontainer .quintodestro h1 {
   width: 50%;
   font-size: 26px;
   padding-bottom: 30px;
@@ -305,7 +305,7 @@ nav {
   line-height: 39px;
 }
 
-.quintodestro h3 {
+.quintocontainer .quintodestro h3 {
   width: 50%;
   font-size: 22px;
   font-style: italic;
@@ -314,17 +314,17 @@ nav {
   line-height: 33px;
 }
 
-.quintodestro p {
+.quintocontainer .quintodestro p {
   font-size: 22px;
   color: blue;
   margin-bottom: 55px;
 }
 
-.alce {
+.quintocontainer .alce {
   width: 70%;
 }
 
-.alce img {
+.quintocontainer .alce img {
   width: 60%;
   margin-left: 80px;
 }
@@ -332,13 +332,12 @@ nav {
 .sestocontainer {
   width: 100%;
   height: 100%;
-  background-color: green;
   border: 5px solid purple;
   display: flex;
   padding-top: 100px;
 }
 
-.sestosinistro {
+.sestocontainer .sestosinistro {
   width: 50%;
   height: 100%;
   border: 3px solid blue;
@@ -347,7 +346,7 @@ nav {
   align-items: flex-end;
 }
 
-.sestosinistro h1 {
+.sestocontainer .sestosinistro h1 {
   width: 50%;
   font-size: 26px;
   padding-bottom: 30px;
@@ -356,7 +355,7 @@ nav {
   line-height: 39px;
 }
 
-.sestosinistro h3 {
+.sestocontainer .sestosinistro h3 {
   max-width: 50%;
   font-size: 22px;
   font-style: italic;
@@ -365,35 +364,35 @@ nav {
   line-height: 33px;
 }
 
-.sestosinistro p {
+.sestocontainer .sestosinistro p {
   width: 50%;
   font-size: 22px;
   color: blue;
   margin-bottom: 55px;
 }
 
-.bambino {
+.sestocontainer .sestosinistro .bambino {
   width: 50%;
 }
 
-.bambino img {
+.sestocontainer .sestosinistro .bambino img {
   max-width: 270px;
   margin-right: 80px;
 }
 
-.sestodestro {
+.sestocontainer .sestodestro {
   width: 50%;
   height: 100%;
 }
 
-.sestodestro img {
+.sestocontainer .sestodestro img {
   width: 100%;
   height: 100%;
 }
 
 .lastcontainer {
   width: 100%;
-  height: 700px;
+  height: 100%;
   background-color: #ffe7d2;
 }
 
@@ -408,5 +407,79 @@ nav {
 .lasttitle h1 {
   font-size: 40px;
   color: #58402c;
+}
+
+.letteracontainer {
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.letteracontainer h1 {
+  font-size: 16px;
+  text-align: start;
+  padding-bottom: 50px;
+}
+
+.contfotogeneral {
+  display: flex;
+}
+
+.foto {
+  width: 20%;
+  height: 100%;
+}
+
+.foto img {
+  width: 38px;
+}
+
+.founders h5 {
+  color: #30488f;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.founders h6 {
+  font-size: 12px;
+  line-height: 18px;
+  color: #58402c;
+}
+
+.bottonilast {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.bottonilast span {
+  padding-top: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.bottonilast #buttondue {
+  display: flex;
+  padding: 5px;
+  background-color: #30488f;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.email {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#simboli {
+  font-size: 14px;
+  height: 100%;
 }
 

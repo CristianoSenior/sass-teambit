@@ -1,0 +1,186 @@
+
+
+
+
+
+
+
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+// Mixin
+@mixin containerTigre{
+  .quartocontainer{
+    width: 100%;
+    height: 100%;
+    // background-color: green;
+    border: 5px solid purple;
+    display: flex;
+    padding-top: 100px;
+    .quartosinistro{
+      width: 50%;
+      height: 100%;
+      border: 3px solid blue;
+      @include flex-column;
+      h1{
+        width: 50%;
+        font-size: 26px;
+        padding-bottom: 30px;
+        color: #58402c;
+        letter-spacing: normal;
+        line-height: 39px;
+        // padding-left: 30%;
+      }
+      h3{
+        max-width: 50%;
+        font-size: 22px;
+        font-style: italic;
+        padding-bottom: 50px;
+        color: #58402c;
+        line-height: 33px;
+      }
+
+      p{
+        width: 50%;
+        font-size: 22px;
+        color: blue;
+        margin-bottom: 55px;
+      }
+    }
+    .tigre{
+      width: 50%;
+      img{
+        max-width:270px;
+        margin-right: 80px;
+      }
+    }
+    .quartodestro{
+      width: 50%;
+      height: 100%;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+@mixin quintocontainer{
+  .quintocontainer{
+    width: 100%;
+    height: 500px;
+    // background-color: yellow;
+    border: 2px solid red;
+    display: flex;
+    margin-top: 150px;
+    .quintosinistro{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: flex-end;
+      img{
+        width: 100%;
+        height: 100%;
+        padding-top:30px;
+      }
+    }
+    .quintodestro{
+      width: 50%;
+      height: 100%;
+      background-color: white;
+      h1{
+        width: 50%;
+        font-size: 26px;
+        padding-bottom: 30px;
+        color: #58402c;
+        letter-spacing: normal;
+        line-height: 39px;
+      }
+      h3{
+        width: 50%;
+        font-size: 22px;
+        font-style: italic;
+        padding-bottom: 50px;
+        color: #58402c;
+        line-height: 33px;
+      }
+      p{
+        font-size: 22px;
+        color: blue;
+        margin-bottom: 55px;
+      }
+    }
+    .alce{
+      width: 70%;
+      img{
+        width: 60%;
+        margin-left: 80px;
+      }
+    }
+  }
+}
+
+
+// container Bambino
+@mixin containerBambino {
+  .sestocontainer{
+    width: 100%;
+    height: 100%;
+    // background-color: green;
+    border: 5px solid purple;
+    display: flex;
+    padding-top: 100px;
+    .sestosinistro{
+      width: 50%;
+      height: 100%;
+      border: 3px solid blue;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      h1{
+        width: 50%;
+        font-size: 26px;
+        padding-bottom: 30px;
+        color: #58402c;
+        letter-spacing: normal;
+        line-height: 39px;
+        // padding-left: 30%;
+      }
+      h3{
+        max-width: 50%;
+        font-size: 22px;
+        font-style: italic;
+        padding-bottom: 50px;
+        color: #58402c;
+        line-height: 33px;
+      }
+
+      p{
+        width: 50%;
+        font-size: 22px;
+        color: blue;
+        margin-bottom: 55px;
+      }
+      .bambino{
+        width: 50%;
+        img{
+          max-width:270px;
+          margin-right: 80px;
+        }
+      }
+    }
+    .sestodestro{
+      width: 50%;
+      height: 100%;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
