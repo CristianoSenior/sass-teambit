@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "HarmoniaSansProCyr-SemiBd";
+}
+
 nav {
   width: 80%;
   height: 100px;
@@ -81,26 +85,27 @@ nav {
 
 .containerdue {
   width: 100%;
-  height: 800px;
+  height: 100%;
   background-color: #ffe7d2;
   border: 2px solid green;
 }
 
 .containerdue h1 {
-  padding-top: 50px;
+  padding-top: 45px;
   font-size: 26px;
   color: #58402c;
   text-align: center;
 }
 
 .altomain {
-  width: 80%;
+  width: 40%;
   height: 100px;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 .containerquadrati {
+  padding-top: 70px;
+  padding-bottom: 70px;
   width: 60%;
   height: 100%;
   margin: 0 auto;
@@ -123,7 +128,7 @@ nav {
 }
 
 .quadratoprimo img {
-  width: 70%;
+  width: 50%;
   height: 150px;
 }
 
@@ -138,5 +143,114 @@ nav {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.terzocontainer {
+  width: 100%;
+  height: 500px;
+  background-color: yellow;
+  border: 2px solid red;
+  display: flex;
+  margin-top: 150px;
+}
+
+.terzosinistro {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: flex-end;
+}
+
+.terzosinistro img {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.terzodestro {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+.terzodestro h1 {
+  width: 50%;
+  font-size: 26px;
+  padding-bottom: 30px;
+  color: #58402c;
+  letter-spacing: normal;
+  line-height: 39px;
+}
+
+.terzodestro h3 {
+  width: 50%;
+  font-size: 22px;
+  font-style: italic;
+  padding-bottom: 50px;
+  color: #58402c;
+  line-height: 33px;
+}
+
+.terzodestro p {
+  font-size: 22px;
+  color: blue;
+  margin-bottom: 55px;
+}
+
+.tricheco {
+  width: 50%;
+}
+
+.tricheco img {
+  width: 60%;
+  margin-left: 80px;
+}
+
+.quartocontainer {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  border: 2px solid purple;
+  display: flex;
+}
+
+.quartosinistro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quartosinistro h1 {
+  width: 50%;
+  font-size: 26px;
+  padding-bottom: 30px;
+  color: #58402c;
+  letter-spacing: normal;
+  line-height: 39px;
+}
+
+.quartosinistro h3 {
+  width: 50%;
+  font-size: 22px;
+  font-style: italic;
+  padding-bottom: 50px;
+  color: #58402c;
+  line-height: 33px;
+}
+
+.quartosinistro p {
+  font-size: 22px;
+  color: blue;
+  margin-bottom: 55px;
+}
+
+.tigre {
+  width: 80%;
+}
+
+.tigre img {
+  max-width: 270px;
+  margin-right: 80px;
 }
 
