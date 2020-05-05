@@ -15,37 +15,34 @@ body{
 nav{
   width: 70%;
   height: 100px;
-  margin: 0 auto;
-}
-
-.ciao{
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid black;
-  .destro{
-    width: 50%;
+  margin: $maginecentr;
+  .ciao{
+    width: 100%;
     height: 100px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: yellow;
+    justify-content: space-between;
     border: 2px solid black;
-    ul{
-      width: 70%;
+    .destro{
+      width: 50%;
+      height: 100px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
-      border: 1px solid red;
-      li{
-        list-style-type: none;
-        font-size: 14px;
-
-        a{
-        text-decoration: none;
-        color:#58402c;
-
+      background-color: green;
+      border: 2px solid black;
+      ul{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid red;
+        li{
+          list-style-type: none;
+          font-size: 14px;
+          a{
+          text-decoration: none;
+          color:$colortextmain;
+          }
         }
       }
     }
@@ -53,11 +50,13 @@ nav{
 }
 
 
+
+
 // <!-- Primo Container---------------------->
 .sectionuno{
   width: 70%;
   height: 100%;
-  margin: 0 auto;
+  margin: $maginecentr;
   display: flex;
   background-color:white;
   margin-top: 130px;
@@ -67,13 +66,13 @@ nav{
     height: 100%;
 
     h1{
-      color:#58402c;
+      color:$colortextmain;
       font-size: 50px;
       margin-bottom: 10px;
       line-height: 70px;
     }
     h3{
-      color:#58402c;
+      color:$colortextmain;
       font-size: 22px;
       line-height: 33px;
     }
@@ -95,59 +94,63 @@ nav{
   height: 100%;
   background: $colprincsfondo;
   border:2px solid green;
-  h1{
-    padding-top: 45px;
-    font-size: 26px;
-    color: #58402c;
-    text-align: center;
+
+  .altomain{
+    width: 40%;
+    height: 100px;
+    margin: $maginecentr;
+    // border: 2px solid red;
+    h1{
+      padding-top: 45px;
+      font-size: 26px;
+      color: $colortextmain;
+      text-align: center;
+    }
   }
-}
-.altomain{
-  width: 40%;
-  height: 100px;
-  margin: 0 auto;
-  // border: 2px solid red;
+  .containerquadrati{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 60%;
+    height: 100%;
+    margin: $maginecentr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .quadratoprimo{
+      width: 30%;
+      min-height: 220px;
+      border: 1px solid black;
+      margin: 0 3%;
+      // background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      img{
+        width: 50%;
+        height: 150px;
+      }
+    }
+  }
+  .bassomain{
+    width: 80%;
+    height: 100%;
+    margin: $maginecentr;
+    img{
+      width: 300px;
+      // height:100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
 }
 
-.containerquadrati{
-  padding-top: 70px;
-  padding-bottom: 70px;
-  width: 60%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.quadratoprimo{
-  width: 30%;
-  min-height: 220px;
-  border: 1px solid black;
-  margin: 0 3%;
-  // background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  img{
-    width: 50%;
-    height: 150px;
-  }
-}
 
-.bassomain{
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  img{
-    width: 300px;
-    // height:100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-}
+
+
+
 // <!-- Secondo container PARTE PRIMA----------->
 .terzocontainer{
   width: 100%;
@@ -178,7 +181,7 @@ nav{
     width: 50%;
     font-size: 26px;
     padding-bottom: 30px;
-    color: #58402c;
+    color: $colortextmain;
     letter-spacing: normal;
     line-height: 39px;
   }
@@ -187,7 +190,7 @@ nav{
     font-size: 22px;
     font-style: italic;
     padding-bottom: 50px;
-    color: #58402c;
+    color:$colortextmain;
     line-height: 33px;
   }
   p{
@@ -392,85 +395,81 @@ nav{
   width: 100%;
   height: 100%;
   background-color:#ffe7d2;
-}
-.lasttitle{
-  width: 35%;
-  height: 100%;
-  margin: 0 auto;
-  line-height: 61px;
-  text-align: center;
+  .lasttitle{
+    width: 35%;
+    height: 100%;
+    margin: $maginecentr;
+    line-height: 61px;
+    text-align: center;
 
-  h1{
-    font-size: 40px;
-    color: #58402c;
-
+    h1{
+      font-size: 40px;
+      color:$colortextmain;
+    }
   }
-}
-.letteracontainer{
-  width: 40%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  h1{
-    font-size: 16px;
-    text-align: start;
-    padding-bottom: 50px;
-  }
-}
-.contfotogeneral{
-  display: flex;
-}
-.foto{
-  width: 20%;
-  height: 100%;
-  img{
-    width: 38px;
-  }
-}
-.founders{
-  h5{
-    color:#30488f;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  h6{
-    font-size: 12px;
-    line-height: 18px;
-    color: #58402c;
-
-  }
-}
-.bottonilast{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  span{
-    padding-top: 7px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  #buttondue{
-    display: flex;
-    padding: 5px;
-    background-color: #30488f;
+  .letteracontainer{
+    width: 40%;
+    height: 100%;
+    margin: $maginecentr;
+    background-color: white;
     border-radius: 10px;
-    color: white;
-    font-size: 14px;
+    padding: 30px;
+    h1{
+      font-size: 16px;
+      text-align: start;
+      padding-bottom: 50px;
+    }
+    .contfotogeneral{
+      display: flex;
+      .foto{
+        width: 20%;
+        height: 100%;
+        img{
+          width: 38px;
+        }
+      }
+      .founders{
+        h5{
+          color:#30488f;
+          font-size: 14px;
+          line-height: 21px;
+        }
+        h6{
+          font-size: 12px;
+          line-height: 18px;
+          color: $colortextmain;
+
+        }
+      }
+    }
   }
-}
-.email{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-#simboli{
-  font-size: 14px;
-  height: 100%;
-
-
+  .bottonilast{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    span{
+      padding-top: 7px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    #buttondue{
+      display: flex;
+      padding: 5px;
+      background-color: #30488f;
+      border-radius: 10px;
+      color: white;
+      font-size: 14px;
+    }
+    #simboli{
+      font-size: 14px;
+      height: 100%;
+    }
+  }
+    .email{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
 }
